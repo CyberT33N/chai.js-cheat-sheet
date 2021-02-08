@@ -50,7 +50,6 @@ expect(obj).to.deep.equal(obj)
 
 ## type is array
 ```javascript
-expect([1, 2, 3]).to.be.array();
-expect('foobar').not.to.be.array();
+expect([]).to.be.an('array')
 ```
 
