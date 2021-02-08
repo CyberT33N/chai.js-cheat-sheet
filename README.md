@@ -35,3 +35,22 @@ console.log(compare); // false
 
 expect(obj).to.deep.equal(obj)
 ```
+
+
+
+
+
+
+
+<br><br><br><br>
+
+## array
+
+<br><br>
+
+## type is array
+```javascript
+expect([1, 2, 3]).to.be.array();
+expect('foobar').not.to.be.array();
+```
+
