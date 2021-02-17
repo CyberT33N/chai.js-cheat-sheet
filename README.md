@@ -53,3 +53,32 @@ expect(obj).to.deep.equal(obj)
 expect([]).to.be.an('array')
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+
+## regex
+```javascript
+expect('foobar').to.match(/^foo/);
+```
+
