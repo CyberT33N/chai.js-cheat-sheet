@@ -5,7 +5,7 @@ Chai.js Cheat Sheet with the most needed stuff ..
 
 <br><br>
 
-# Expect
+# Expect (https://www.chaijs.com/api/bdd/)
 
 <br><br>
 
