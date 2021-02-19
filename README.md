@@ -82,3 +82,30 @@ expect([]).to.be.an('array')
 expect('foobar').to.match(/^foo/);
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+
+## instanceof (https://www.chaijs.com/api/bdd/#method_instanceof)
+```javascript
+function Cat () { }
+
+expect(new Cat()).to.be.an.instanceof(Cat);
+expect([1, 2]).to.be.an.instanceof(Array);
+```
+
