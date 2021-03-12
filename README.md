@@ -42,7 +42,9 @@ expect(obj).to.deep.equal(obj)
 
 
 
-<br><br><br><br>
+
+<br><br>
+<br><br>
 
 ## array
 
@@ -52,6 +54,52 @@ expect(obj).to.deep.equal(obj)
 ```javascript
 expect([]).to.be.an('array')
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+
+## promises
+```javascript
+it('reject expected', () => {
+  return expect(new Promise((res,rej) => {rej()})).to.be.rejected
+})
+it('reject unexpected', () => {
+  return expect(new Promise((res,rej) => {rej()})).to.be.fulfilled
+})
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
