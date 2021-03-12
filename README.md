@@ -78,6 +78,10 @@ expect([]).to.be.an('array')
 
 ## promises
 ```javascript
+const chai = require('chai');
+chai.use(require('chai-as-promised'));
+chai.should();
+
 it('reject expected', () => {
   return expect(new Promise((res,rej) => {rej()})).to.be.rejected
 })
