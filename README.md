@@ -36,6 +36,60 @@ console.log(compare); // false
 expect(obj).to.deep.equal(obj)
 ```
 
+<br><br>
+
+#### deep equal any order (https://www.npmjs.com/package/deep-equal-in-any-order)
+```javascript
+const deepEqualInAnyOrder = require('deep-equal-in-any-order');
+const chai = require('chai');
+
+chai.use(deepEqualInAnyOrder);
+
+const { expect } = chai;
+
+expect([1, 2]).to.deep.equalInAnyOrder([2, 1]);
+expect([1, 2]).to.not.deep.equalInAnyOrder([2, 1, 3]);
+expect({ foo: [1, 2], bar: [4, 89, 22] }).to.deep.equalInAnyOrder({ foo: [2, 1], bar: [4, 22, 89] });
+expect({ foo: ['foo-1', 'foo-2', [1, 2], null ] }).to.deep.equalInAnyOrder({ foo: [null, [1, 2], 'foo-1', 'foo-2'] });
+expect({ foo: [1, 2], bar: { baz: ['a', 'b', { lorem: [5, 6] }] } }).to.deep.equalInAnyOrder({ foo: [2, 1], bar: { baz: ['b', 'a', { lorem: [6, 5] }] } });
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -44,9 +98,11 @@ expect(obj).to.deep.equal(obj)
 
 
 <br><br>
+_________________________________________________________
+_________________________________________________________
 <br><br>
 
-## array
+## Array
 
 <br><br>
 
@@ -73,7 +129,105 @@ expect([]).to.be.an('array')
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br>
+_________________________________________________________
+_________________________________________________________
+<br><br>
+
+## Object
+
+<br><br>
+
+## include all properties inside of array
+```javascript
+const obj = {
+  "useNewUrlParser": "true",
+  "useUnifiedTopology": "true",
+  "connectTimeoutMS": "10000",
+  "socketTimeoutMS": "45000"
+};
+
+expect(obj).to.include.all.keys("useNewUrlParser", "socketTimeoutMS");
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+_________________________________________________________
+_________________________________________________________
 <br><br>
 
 ## promises
@@ -127,7 +281,41 @@ it('reject unexpected', () => {
 
 
 
-<br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+_________________________________________________________
+_________________________________________________________
+<br><br>
 
 ## regex
 ```javascript
@@ -151,7 +339,40 @@ expect('foobar').to.match(/^foo/);
 
 
 
-<br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+_________________________________________________________
+_________________________________________________________
+<br><br>
+
 
 ## instanceof (https://www.chaijs.com/api/bdd/#method_instanceof)
 ```javascript
