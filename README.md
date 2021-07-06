@@ -376,6 +376,9 @@ _________________________________________________________
 ```javascript
 var badFn = function () { throw new TypeError('Illegal salmon!'); };
 expect(badFn).to.throw(TypeError);
+
+// example with executing funtion
+expect(() => validateModels(models)).to.throw('bla bla')
 ```
 
 <br><br>
@@ -387,6 +390,9 @@ var goodFn = function () {};
 
 expect(goodFn).to.not.throw(); // Recommended
 expect(goodFn).to.not.throw(ReferenceError, 'x'); // Not recommended
+
+// example with executing funtion
+expect(() => validateModels(models)).to.not.throw();
 ```
 
 
