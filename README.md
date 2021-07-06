@@ -366,6 +366,80 @@ expect('foobar').to.match(/^foo/);
 
 
 
+<br><br>
+_________________________________________________________
+_________________________________________________________
+<br><br>
+
+
+## throw (https://www.chaijs.com/api/bdd/#method_throw)
+```javascript
+var badFn = function () { throw new TypeError('Illegal salmon!'); };
+expect(badFn).to.throw(TypeError);
+```
+
+<br><br>
+
+
+## not throw (https://www.chaijs.com/api/bdd/#method_throw)
+```javascript
+var goodFn = function () {};
+
+expect(goodFn).to.not.throw(); // Recommended
+expect(goodFn).to.not.throw(ReferenceError, 'x'); // Not recommended
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <br><br>
