@@ -373,6 +373,7 @@ _________________________________________________________
 
 
 ## throw (https://www.chaijs.com/api/bdd/#method_throw)
+- does not work with async functions
 ```javascript
 var badFn = function () { throw new TypeError('Illegal salmon!'); };
 expect(badFn).to.throw(TypeError);
@@ -385,6 +386,7 @@ expect(() => validateModels(models)).to.throw('bla bla')
 
 
 ## not throw (https://www.chaijs.com/api/bdd/#method_throw)
+- does not work with async functions
 ```javascript
 var goodFn = function () {};
 
