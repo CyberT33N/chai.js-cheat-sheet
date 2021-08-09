@@ -3,9 +3,25 @@ Chai.js Cheat Sheet with the most needed stuff ..
 
 
 
+
+
+
+
+
+
+
+
+
 <br><br>
 
 # Expect (https://www.chaijs.com/api/bdd/)
+
+<br><br>
+
+## exist
+```javascript
+expect(project.entities).to.exist
+```
 
 <br><br>
 
