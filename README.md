@@ -18,14 +18,15 @@ Chai.js Cheat Sheet with the most needed stuff ..
 
 <br><br>
 
-## exist
+## .exist
 ```javascript
 expect(project.entities).to.exist
+expect(project.entities).to.not.exist
 ```
 
 <br><br>
 
-## equal
+## .equal
 ```javascript
 const foo = 'bar';
 expect(foo).to.equal('bar');
@@ -33,7 +34,7 @@ expect(foo).to.equal('bar');
 
 <br><br>
 
-#### eql
+#### .eql
 - eql. Eql is based on the deep-eql project. It works by looking at the content of the expressions being compared.
 ```javascript
 expect([1, 2, 3]).to.equal([1, 2, 3]); // fails
@@ -72,6 +73,12 @@ expect({ foo: [1, 2], bar: { baz: ['a', 'b', { lorem: [5, 6] }] } }).to.deep.equ
 
 
 
+<br><br>
+
+## .contain
+```javascript
+expect('My name is Jeff').to.contain('My name is')
+```
 
 
 
