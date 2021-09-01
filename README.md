@@ -120,41 +120,67 @@ expect('My name is Jeff').to.contain('My name is')
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br>
 _________________________________________________________
 _________________________________________________________
 <br><br>
 
-## Array
+## Type
 
 <br><br>
 
-## type is array
 ```javascript
 expect([]).to.be.an('array')
+expect('blaa').to.be.an('string')
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
