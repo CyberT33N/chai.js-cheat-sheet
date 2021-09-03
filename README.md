@@ -23,6 +23,12 @@ Chai.js Cheat Sheet with the most needed stuff ..
 expect(project.entities).to.exist
 expect(project.entities).to.not.exist
 ```
+<br><br>
+
+## .include
+```javascript
+expect('foobar').to.include('foo');
+```
 
 <br><br>
 
