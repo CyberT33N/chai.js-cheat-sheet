@@ -32,6 +32,20 @@ expect('foobar').to.include('foo');
 
 <br><br>
 
+
+## deep.include
+```javascript
+// Target array deeply (but not strictly) includes `{a: 1}`
+expect([{a: 1}]).to.deep.include({a: 1});
+expect([{a: 1}]).to.not.include({a: 1});
+
+// Target object deeply (but not strictly) includes `x: {a: 1}`
+expect({x: {a: 1}}).to.deep.include({x: {a: 1}});
+expect({x: {a: 1}}).to.not.include({x: {a: 1}});
+```
+
+<br><br>
+
 ## .equal
 ```javascript
 const foo = 'bar';
