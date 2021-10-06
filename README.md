@@ -1,4 +1,4 @@
-# Chai.js Cheat Sheet
+# Chai.js Cheat Sheet (https://www.npmjs.com/package/chai)
 Chai.js Cheat Sheet with the most needed stuff ..
 
 
@@ -8,6 +8,25 @@ Chai.js Cheat Sheet with the most needed stuff ..
 
 
 
+<br><br>
+
+# Install
+```bash
+npm i -D chai
+```
+
+- Import the library in your code, and then pick one of the styles you'd like to use - either assert, expect or should:
+```bash
+var chai = require('chai');  
+var assert = chai.assert;    // Using Assert style
+var expect = chai.expect;    // Using Expect style
+var should = chai.should();  // Using Should style
+```
+
+
+
+
+<br><br>
 
 
 
