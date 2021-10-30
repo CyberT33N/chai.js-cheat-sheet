@@ -260,7 +260,7 @@ _________________________________________________________
 
 <br><br>
 
-## include all properties inside of array
+## check if object includes all properties inside of array
 ```javascript
 const obj = {
   "useNewUrlParser": "true",
@@ -272,6 +272,22 @@ const obj = {
 expect(obj).to.include.all.keys("useNewUrlParser", "socketTimeoutMS");
 ```
 
+
+
+<br><br>
+
+## check if object includes specific keys
+```javascript
+var obj= {
+  user: "user",
+  title: "title",
+  content: "content",
+  message: "message"
+};
+
+const headers = ['user', 'title']
+expect(obj).include.keys(headers)
+```
 
 
 
