@@ -526,7 +526,11 @@ it('wins() returns Winner', async () => {
 
 it('fails() throws Error', async () => {
   await expect(fails()).to.be.rejectedWith(Error)
+  // await expect(fails()).to.rejected
 })
+
+// you can also use
+
 ```
 
 
