@@ -477,7 +477,7 @@ _________________________________________________________
 
 
 ## throw (https://www.chaijs.com/api/bdd/#method_throw)
-- does not work with async functions
+- does not work with async functions. Check below for working example
 ```javascript
 var badFn = function () { throw new TypeError('Illegal salmon!'); };
 expect(badFn).to.throw(TypeError);
@@ -490,7 +490,7 @@ expect(() => validateModels(models)).to.throw('bla bla')
 
 
 ## not throw (https://www.chaijs.com/api/bdd/#method_throw)
-- does not work with async functions
+- does not work with async functions. Check below for working example
 ```javascript
 var goodFn = function () {};
 
@@ -501,11 +501,33 @@ expect(goodFn).to.not.throw(ReferenceError, 'x'); // Not recommended
 expect(() => validateModels(models)).to.not.throw();
 ```
 
+<br><br>
 
 
+## await (https://www.chaijs.com/plugins/chai-as-promised/)
+```javascript
+const chai = require('chai')
+const expect = chai.expect
+chai.use(require('chai-as-promised'))
 
+// Always succeeds
+async function wins() {
+  return 'Winner'
+}
 
+// Always fails with an error
+async function fails() {
+  throw new Error('Contrived Error')
+}
 
+it('wins() returns Winner', async () => {
+  expect(await wins()).to.equal('Winner')
+})
+
+it('fails() throws Error', async () => {
+  await expect(fails()).to.be.rejectedWith(Error)
+})
+```
 
 
 
