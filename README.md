@@ -525,6 +525,7 @@ it('wins() returns Winner', async () => {
 })
 
 it('fails() throws Error', async () => {
+  // rejectedWith has same logic like includes
   await expect(fails()).to.be.rejectedWith(Error)
   // await expect(fails()).to.rejected
 })
