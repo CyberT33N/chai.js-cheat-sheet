@@ -53,7 +53,7 @@ expect('foobar').to.include('foo');
 
 ## Check if array is included in array
 ```javascript
-expect(['a', 'b', 'c'])to.include.members('a', 'c');
+expect(['a', 'b', 'c']).to.include.members('a', 'c');
 ```
 
 <br><br>
