@@ -49,6 +49,39 @@ expect(project.entities).to.not.exist
 expect('foobar').to.include('foo');
 ```
 
+
+
+
+<br><br>
+
+# Chaining
+```javascript
+expect(data)
+    .to.includes('Test')
+    .to.not.match(regex)
+```
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+
+
+## .exist
+```javascript
+expect(project.entities).to.exist
+expect(project.entities).to.not.exist
+```
+
+
+
 <br><br>
 
 ## Check if array is included in array
