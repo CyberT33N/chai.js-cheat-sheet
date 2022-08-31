@@ -503,6 +503,55 @@ expect('foobar').to.match(/^foo/);
 
 
 
+<br><br>
+_________________________________________________________
+_________________________________________________________
+<br><br>
+
+## Chaining
+```javascript
+expect(state.markup)
+    .to.includes(Doc.value)
+    .and.to.includes('target=')
+    .and.to.not.includes('&amp;')
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
